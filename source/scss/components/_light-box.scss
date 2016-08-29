@@ -1,0 +1,55 @@
+.light-box{
+    @include position(fixed, 0, 0, 0, 0);
+    @include size(100%, 100%);
+    background-color: #222;
+    display: none;
+    .container{
+        padding-top: 200px;
+        padding-bottom: 200px;
+        height: 100%;
+        position: relative;
+    }
+    .light-wrap{
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+    }
+    ul.view{
+        transform: translate(0,0);
+        height: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+        li:nth-child(1) {
+            transform: translate(0,0);
+        }
+        li:nth-child(2){
+            transform: translate(100%,0);
+        }
+        li:nth-child(3){
+            transform: translate(200%,0);
+        }
+        li:nth-child(4){
+            transform: translate(300%,0);
+        }
+        li:nth-child(5){
+            transform: translate(400%,0);
+        }
+        li:nth-child(6){
+            transform: translate(500%,0);
+        }
+    }
+}
+
+.dark-box{
+    @extend .light-box;
+}

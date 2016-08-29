@@ -1,0 +1,27 @@
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-angle-right::before {
+    content: "\f105";
+}
+.fa-mobile::before {
+    content: "\f10b";
+}
+.fa-map-marker::before {
+    content: "\f041";
+}
+.fa-envelope-o::before {
+    content: "\f003";
+}
+.fa-plus::before {
+    content: "\f067";
+}
+.fa-angle-left::before {
+    content: "\f104";
+}

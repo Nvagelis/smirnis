@@ -1,0 +1,29 @@
+.home{
+    @extend %cover-image;
+    background-image: url('../images/header-bg.jpg');
+}
+
+.overlay{
+    @include bg-opacity(#000, 0.7);
+    height: 100%;
+}
+.main-header{
+    @include center-position($position: relative);
+    width: 221px;
+    overflow: hidden;
+    h1{
+        @extend %home-title;
+        @include font-size(56px);
+        line-height: 56px;
+    }
+    .line{
+        @include line($header-line-color);
+    }
+    h2{
+        @extend %home-title;
+        @include font-size(21px);
+        line-height: 21px;
+        letter-spacing: 21px;
+    }
+}
+

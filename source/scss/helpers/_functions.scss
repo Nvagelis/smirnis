@@ -1,0 +1,16 @@
+@function calculateRem($size) {
+    $remSize: $size / 10px;
+    @return $remSize * 1rem;
+}
+@function calculateEm($size){
+    $emSize: $size / $font-size-base;
+    @return $emSize * 1em;
+}
+@function culcHeightBig(){
+    $height: (100 - 100/3) * 1%;
+    @return $height;
+}
+@function culcHeightSm(){
+    $height: (100/3) * 1%;
+    @return $height;
+}

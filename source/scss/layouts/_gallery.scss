@@ -1,0 +1,29 @@
+.colon-12, .sub-col{
+    overflow: hidden;
+}
+
+.gal-box{
+    height: 100%;
+    border: 1px solid;
+    overflow: hidden;
+}
+.gallery-grey{
+    .gal-box{
+        border-color: $border-gallery-gr; 
+    }
+}
+.gallery-brown{
+    .gal-box{
+        border-color: $border-gallery-br; 
+    }
+}
+@include gallery-grey-bg-image('gallery-grey');
+@include gallery-brown-bg-image('gallery-brown');
+
+.gal{
+    transition: all 5s ease;
+    &:hover{
+        transform: scale(1.1);
+        transition: all 5s ease;
+    }
+}

@@ -1,0 +1,28 @@
+%cover-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: (100%, 100%);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+%home-title{
+    font-weight: 300;   
+    text-transform: uppercase;
+}
+%gradient-position{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+}
+%contact-bg-pos{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+}
+%slide-content{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
