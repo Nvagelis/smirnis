@@ -14,7 +14,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-ruby-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    concat = require('gulp-concat');
 
 var config = {
     sourceDir: 'source',
@@ -52,6 +53,7 @@ gulp.task('copy:scss-awesome', function() {
 /*****************************/
 gulp.task('scripts', function () {
     return gulp.src(config.sourceDir + '/js/**/*.js')
+        .pipe(concat('main.js'))
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(rename({suffix:'.min'}))
